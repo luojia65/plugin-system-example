@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "my-master",
+    "my-plugin",
+    "my-interface"
+]
