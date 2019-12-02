@@ -1,7 +1,7 @@
 use my_interface::SayHelloService;
 
 #[no_mangle]
-pub extern "C" fn new_service() -> Box<dyn SayHelloService> {
+pub extern "Rust" fn new_service() -> Box<dyn SayHelloService> {
     Box::new(PluginSayHello::new())
 }
 
