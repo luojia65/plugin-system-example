@@ -9,3 +9,8 @@ edition = "2018"
 [dependencies]
 libloading = "0.5"
 my-interface = { path = "../my-interface", version = "*" }
+
+[profile.release]
+rpath = true
+[profile.debug]
+rpath = true
